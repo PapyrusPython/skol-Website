@@ -1,0 +1,120 @@
+.blue {
+    color: blue; size: 20;
+}
+
+.center {
+    display: block;
+    margin-inline:  auto;
+} 
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+}
+h6 {
+    text-align: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.animation {
+  display: block;
+  margin-inline: auto;
+  animation: bounce 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.lower{
+    margin-top: 100px;
+}
+
+.title {
+
+    color: rgb(255, 196, 196);
+    text-align: center;
+    filter:blur(1px);
+    text-shadow:
+    0 0 15px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 30px #ff0000,
+    0 0 60px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 100px #ff0000,
+    0 0 150px #ff0000;  
+
+
+}
+
+.test {
+      font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.dialogue {
+  display: flex;
+  font-family: "Press Start 2P", monospace;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 10px;
+  border: 4px solid white;
+  color: white;
+}
+.dialogue img {
+  width: 100px;
+  height: auto;
+}

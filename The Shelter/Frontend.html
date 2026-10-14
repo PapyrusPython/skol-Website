@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>The Shelter</title>
+</head>
+<body>
+
+<!--tuff title-->
+    <h1>Papyrus <span class="title">Goon Cave</span></h1>
+<br>
+<br>
+
+<!--text with colors and a gif-->
+<h1>just think of a <span class="blue">blue</span> stopsign..</h1>
+<img class=center src="pictures_and_gifs/PapyrusDance.gif" alt="papyrus breaking it down" >
+
+<!--Moving text-->
+<div class="lower">
+    <h2 class="animation">oh I'm bouncing on it</h2>
+</div>
+
+<!--papyrus dialogue-->
+<div class="dialogue"> 
+    <img src="pictures_and_gifs/PapyrusTalk.png" alt="papyrus talking" height="100px" width="75">
+    <p class="test" id="dialogue-text"></p>
+
+
+
+</div>
+
+<!--JS script straight from ChatGpt-->
+<script>
+  const message = "* Im the Roaring Knight !!";
+  const textElement = document.getElementById("dialogue-text");
+  let letter = 0;
+
+  function typeNextLetter() {
+    if (letter < message.length) {
+      textElement.textContent += message[letter];
+      letter++;
+      setTimeout(typeNextLetter, 50);
+    } else {
+      setTimeout(restartMessage, 1500); // pause when finished
+    }
+  }
+
+  function restartMessage() {
+    textElement.textContent = "";
+    letter = 0;
+    typeNextLetter();
+  }
+
+  typeNextLetter();
+</script>
+</body>
+</html>
+
