@@ -88,10 +88,14 @@ body {
 }
 
 .dont-button {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .dont-button img {
@@ -109,3 +113,8 @@ body {
 .dont-button:active .pressed {
   display: block;
 }
+
+.yellow{
+    color: yellow; size: 20;
+}
+
