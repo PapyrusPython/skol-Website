@@ -8,6 +8,7 @@
 } 
 
 p {
+    font-family: "Press Start 2P", monospace;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -17,21 +18,27 @@ p {
 }
 
 h1 {
+    font-family: "Press Start 2P", monospace;
     text-align: center;
 }
 h2 {
+    font-family: "Press Start 2P", monospace;
     text-align: center;
 }
 h3 {
+    font-family: "Press Start 2P", monospace;
     text-align: center;
 }
 h4 {
+    font-family: "Press Start 2P", monospace;
     text-align: center;
 }
 h5 {
+    font-family: "Press Start 2P", monospace;
     text-align: center;
 }
 h6 {
+    font-family: "Press Start 2P", monospace;
     text-align: center;
 }
 
@@ -78,4 +85,27 @@ body {
 .dialogue img {
   width: 100px;
   height: auto;
+}
+
+.dont-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dont-button img {
+  display: block;
+}
+
+.dont-button .pressed {
+  display: none;
+}
+
+.dont-button:active .normal {
+  display: none;
+}
+
+.dont-button:active .pressed {
+  display: block;
 }
