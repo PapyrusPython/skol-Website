@@ -7,6 +7,11 @@
     margin-inline:  auto;
 } 
 
+.dance-video {
+  max-width: 100%;
+  height: auto;
+}
+
 p {
     font-family: "Press Start 2P", monospace;
     display: block;
