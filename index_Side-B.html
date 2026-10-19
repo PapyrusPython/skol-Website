@@ -41,6 +41,38 @@
     <h2 class="animation">I'm bouncing on a trampoline!</h2>
 </div>
 
+
+
+<img class="center" src="pictures_and_gifs/PapyrusTalk.png" alt="Papyrus" height="200" width="150" id="papyrus">
+<script>
+let messageIndex = 0;
+const papyrus = document.getElementById("papyrus");
+const messages = [
+  "*  Stop touching me !!",
+  "*  I said stop!",
+  "*  Seriously, stop it!",
+  "*  I'm warning you!",
+  "*  That's it! Im fucking nuking the website!!",
+  "*  ...how do I do that?",
+  "*  Jøran e unc lmfaoo"
+];
+const speedMessages = new Map([
+  [1, "* make me go faster!!"],
+  [10, "* sholy shit im fucking speeding"],
+  [0.1, "* why am I going so slow man tf"]
+]);
+papyrus.addEventListener("click", () => {
+  if (messageIndex < messages.length) {
+    textElement.textContent = messages[messageIndex];
+    messageIndex++;
+    return;
+  }
+
+  const speed = Number(speedSlider.value);
+  textElement.textContent = speedMessages.get(speed) || `* Speed set to ${speed}x.`;
+});
+</script> 
+
 <!--papyrus dialogue-->
 <div class="dialogue"> 
     <img src="pictures_and_gifs/PapyrusTalk.png" alt="papyrus talking" height="100px" width="75">
@@ -71,18 +103,18 @@
     letter = 0;
     typeNextLetter();
   }
-
-  typeNextLetter();
+  // typeNextLetter(); //
 </script>
 
-<div>
 
-<!-- this on the bottom-->
+
+
+<div>
+  <!-- this on the bottom. -->
   <a class="center dont-button" href="index.html" aria-label="CLICK ME!!">
   <img class="normal" src="pictures_and_gifs/btn_CLICK.png" alt="">
   <img class="pressed" src="pictures_and_gifs/btn_CLICK-pressed.png" alt="">
-  
 </a>
+</div>
 </body>
 </html>
-
